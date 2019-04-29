@@ -1,0 +1,11 @@
+wine /i Setup.msi
+wine msiexec /i Setup.msi
+winecfg
+
+./configure --enable-win64
+tools/make_requests
+
+cd .wine/drive_c/ProgramData/Ableton/Live\ 10\ Intro/Program/
+wine Ableton\ Live\ 10\ Intro.exe 
+
+apt-get install font-manager
